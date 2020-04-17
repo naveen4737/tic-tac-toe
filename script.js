@@ -1,6 +1,7 @@
 var current_player = 'Player1';
 var gameStopped = false;
 document.getElementById('player1').style.backgroundColor = 'red';
+var count = 0;
 
 
 // console.log(document.getElementById('box').addEventListener('click', print(this)));
@@ -34,6 +35,8 @@ function print(){
 
     var current_location = this.id;
     if( gameStopped == false && document.getElementById(current_location).textContent == ''){
+
+        count++;    
 
         if(current_player === 'Player1'){
             document.getElementById(current_location).textContent = 'X';
@@ -131,13 +134,21 @@ function print(){
                 }
             }
         }
+
+        if(count == 9){
+            winner("draw");
+        }
     
     }
 }
 
 function winner(text){
-    console.log('Winner is ', text);
-    document.getElementById('announcement').innerHTML = `${text} WON THE GAME!!!`;
+    // console.log('Winner is ', text);
+    if(text === "draw"){
+        document.getElementById('announcement').innerHTML = `Match Draw!!!`;
+    } else {
+        document.getElementById('announcement').innerHTML = `${text} WON THE GAME!!!`;
+    }
 
     document.getElementById('player1').style.backgroundColor = 'yellow';
     document.getElementById('player2').style.backgroundColor = 'yellow';
