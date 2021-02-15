@@ -1,6 +1,5 @@
 var current_player = 'Player1';
 var gameStopped = false;
-// document.getElementById('player1').style.backgroundColor = 'red';
 var count = 0;
 document.getElementById('display_chance').innerHTML = 'Turn of <b>Player-1 (X)<b>';
 
