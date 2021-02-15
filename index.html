@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+    <!-- <div id="main"> -->
+    <button id="mode" class="dark">Dark Mode</button>
     <div id="main-content">
+        <div id="heading">
+            <h1>TIC-TAC-TOE</h1>
+        </div>
         <div id="box">
-            <div id="row1"> 
-                <div id="00" class="inter"></div>
-                <div id="01" class="inter"></div>
-                <div id="02" class="inter"></div>
+            <div id="row1">
+                <div id="loc_00" class="inter"></div>
+                <div id="loc_01" class="inter"></div>
+                <div id="loc_02" class="inter"></div>
             </div>
             <div id="row2">
-                <div id="10" class="inter"></div>
-                <div id="11" class="inter"></div>
-                <div id="12" class="inter"></div>
+                <div id="loc_10" class="inter"></div>
+                <div id="loc_11" class="inter"></div>
+                <div id="loc_12" class="inter"></div>
             </div>
             <div id="row3">
-                <div id="20" class="inter"></div>
-                <div id="21" class="inter"></div>
-                <div id="22" class="inter"></div>
+                <div id="loc_20" class="inter"></div>
+                <div id="loc_21" class="inter"></div>
+                <div id="loc_22" class="inter"></div>
             </div>
         </div>
         <div id="players">
-            <div id="player1" class="playerid">
+            <!-- <div id="player1" class="playerid">
                 Player 1 : X
             </div>
             <div id="player2" class="playerid">
                 Player 2 : O
-            </div>
+            </div> -->
+            <div id="display_chance"></div>
         </div>
         <div id="announcement"></div>
     </div>
+    <!-- </div> -->
 
     <script src="script.js"></script>
 </body>
+
 </html>
