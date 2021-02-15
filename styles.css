@@ -1,35 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    position: relative;
+}
+button{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-size: medium;
+    outline: none;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+/* #main{
+    
+} */
+#main-content{
+    margin-top: -45px;
+}
+
+#heading{
+    text-align: center;
+    margin-bottom: 45px;
+}
+#heading h1{
+    width: fit-content;
+    /* background-color: aqua; */
+    margin: auto;
+    border-bottom: 2px double black;
+    
+    /* border-bottom: 2px double green; */
+}
+
 #box{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* justify-items: center; */
     align-items: center;
     padding: 25px;
 }
+
+/* body{
+    position: absolute;
+}
+
+#main-content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
 
 #row1, #row2, #row3{
     display: flex;
 }
 
+#loc_00{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#loc_01{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#loc_02{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#loc_10{
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#loc_11{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#loc_12{
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#loc_20{
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+#loc_21{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+#loc_22{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
 .inter{
     width: 50px;
     height: 50px;
-    background-color: brown;
-    border: 2px solid black;
-
+    /* background-color: brown; */
+    /* background-color: rgb(253 251 251); */
+    /* border: 2px solid black; */
+    
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-
+    
 }
-
-/* #row1 > div:hover, #row2 > div:hover, #row3 > div:hover{
-    background-color: wheat;
-} */
-
 /* .inter:hover{
-    background-color: wheat;
+    background-color: rgb(219, 214, 214);
 } */
 
 #players{
@@ -46,10 +147,20 @@
     font-size: 25px;
 }
 
+#players{
+    color: black;
+    font-size: 25px;
+
+}
+
 #announcement{
     margin: 59px auto;
     /* width: 500px; */
     text-align: center;
     font-size: 50px;
     color: purple;
+}
+
+#display_chance{
+    text-align: center;
 }
